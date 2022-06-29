@@ -65,7 +65,10 @@ public class MemberUpdateServlet extends HttpServlet {
         //수정후에 login.do의 get으로가기 
         //세션에 데이터가 있는 상태이기때문에 request로 전달 할 필요가없다.
         //페이지 자체를 변경시키는 redirect로 실행
-        response.sendRedirect("login.do");
+        request.setAttribute("message", "수정완료");
+        RequestDispatcher dispatcher=request.getRequestDispatcher("main.jsp");
+		dispatcher.forward(request,response);
+//        response.sendRedirect("login.do");
 	}
 
 }

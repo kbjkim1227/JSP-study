@@ -68,6 +68,13 @@ public class MemberDAO {
 			}
 			return result;
 		}
+   
+		/*
+		 * public int deleteMember(String userid) { String SQL = "DELETE FROM WORD"; try
+		 * { PreparedStatement pstmt = conn.prepareStatement(SQL); return
+		 * pstmt.executeUpdate(); } catch (Exception e) { e.printStackTrace(); } return
+		 * -1; }
+		 */
    //아이디로 회원정보 가져오는 메소드
    public MemberVO getMember(String userid) {
 		MemberVO mVo=null;

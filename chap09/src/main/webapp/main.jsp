@@ -27,6 +27,9 @@
 	 <input type="button" value="삭제" onclick="deleteCheck('${loginUser.userid}')">
 	</td>
 </tr>	
+<tr>
+<td colspan="2">${message}</td>
+</tr>
 </table>
 </form>
 </body>
