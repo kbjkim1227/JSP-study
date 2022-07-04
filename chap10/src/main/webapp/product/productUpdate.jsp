@@ -18,7 +18,7 @@
 				<table>
 					<tr>
 						<td><c:choose>
-								<c:when test="${empty product.pictureUrl }">
+								<c:when test="${empty product.pictureUrl}">
 									<img src="upload/noimage.gif">
 								</c:when>
 								<c:otherwise>

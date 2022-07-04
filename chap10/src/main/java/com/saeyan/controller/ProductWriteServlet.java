@@ -15,9 +15,7 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import com.saeyan.dao.ProductDAO;
 import com.saeyan.dto.ProductVO;
 
-/**
- * Servlet implementation class ProductWriteServlet
- */
+
 @WebServlet("/productWrite.do")
 public class ProductWriteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

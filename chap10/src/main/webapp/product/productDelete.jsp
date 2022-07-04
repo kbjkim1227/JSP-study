@@ -15,7 +15,7 @@
 			<form action="productDelete.do" method="post" name="frm">
 				<table>
 					<tr>
-						<td><c:choose>
+						<td style="width:240px"><c:choose>
 								<c:when test="${empty product.pictureUrl}">
 									<img src="upload/noimage.gif">
 								</c:when>

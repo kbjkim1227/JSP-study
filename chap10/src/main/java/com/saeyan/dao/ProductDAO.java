@@ -25,7 +25,7 @@ public class ProductDAO {
 	// CRUD create read update delete
 	public List<ProductVO> selectAllProducts(){
 		// 최근에 등록한 상품 먼저 출력하기
-		String sql="select * from product order by code desc"; // 마지막에 등록한 제품이 가장 최근에=>desc
+		String sql="select * from product order by code"; // 마지막에 등록한 제품이 가장 최근에=>desc
 		List<ProductVO> list=new ArrayList<ProductVO>();
 		Connection conn=null;
 		PreparedStatement pstmt=null;
