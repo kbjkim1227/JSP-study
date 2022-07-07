@@ -1,4 +1,7 @@
 #Tomcat publish data
-#Wed Jul 06 17:52:48 KST 2022
+#Thu Jul 07 15:19:57 KST 2022
 org.eclipse.jst.jee.server\:chap11=C\:\\apache-tomcat-9\\wtpwebapps\\chap11
+org.eclipse.jst.jee.server\:UserManagement=C\:\\apache-tomcat-9\\wtpwebapps\\UserManagement
+org.eclipse.jst.jee.server\:web-study-12=C\:\\apache-tomcat-9\\wtpwebapps\\web-study-12
 org.eclipse.jst.jee.server\:chap12=C\:\\apache-tomcat-9\\wtpwebapps\\chap12
+org.eclipse.jst.jee.server\:WebMVCProjectTemplate=C\:\\apache-tomcat-9\\wtpwebapps\\WebMVCProjectTemplate
