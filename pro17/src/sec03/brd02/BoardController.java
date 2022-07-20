@@ -24,8 +24,12 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 /**
  * Servlet implementation class BoardController
  */
-/*@WebServlet("/board/*")*/
+//@WebServlet("/board/*")
 public class BoardController extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static String ARTICLE_IMAGE_REPO = "C:\\board\\article_image";
 	BoardService boardService;
 	ArticleVO articleVO;
@@ -111,9 +115,9 @@ public class BoardController extends HttpServlet {
 					System.out.println(fileItem.getFieldName() + "=" + fileItem.getString(encoding));
 					articleMap.put(fileItem.getFieldName(), fileItem.getString(encoding));
 				} else {
-					System.out.println("ÆÄ¶ó¹ÌÅÍ¸í:" + fileItem.getFieldName());
-					//System.out.println("ÆÄÀÏ¸í:" + fileItem.getName());
-					System.out.println("ÆÄÀÏÅ©±â:" + fileItem.getSize() + "bytes");
+					System.out.println("ï¿½Ä¶ï¿½ï¿½ï¿½Í¸ï¿½:" + fileItem.getFieldName());
+					//System.out.println("ï¿½ï¿½ï¿½Ï¸ï¿½:" + fileItem.getName());
+					System.out.println("ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½:" + fileItem.getSize() + "bytes");
 					//articleMap.put(fileItem.getFieldName(), fileItem.getName());
 					if (fileItem.getSize() > 0) {
 						int idx = fileItem.getName().lastIndexOf("\\");
@@ -122,8 +126,8 @@ public class BoardController extends HttpServlet {
 						}
 
 						String fileName = fileItem.getName().substring(idx + 1);
-						System.out.println("ÆÄÀÏ¸í:" + fileName);
-						articleMap.put(fileItem.getFieldName(), fileName);  //ÀÍ½ºÇÃ·Î·¯¿¡¼­ ¾÷·Îµå ÆÄÀÏÀÇ °æ·Î Á¦°Å ÈÄ map¿¡ ÆÄÀÏ¸í ÀúÀå
+						System.out.println("ï¿½ï¿½ï¿½Ï¸ï¿½:" + fileName);
+						articleMap.put(fileItem.getFieldName(), fileName);  //ï¿½Í½ï¿½ï¿½Ã·Î·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ mapï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 						File uploadFile = new File(currentDirPath + "\\" + fileName);
 						fileItem.write(uploadFile);
 

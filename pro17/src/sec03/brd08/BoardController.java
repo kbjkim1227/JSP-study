@@ -28,6 +28,10 @@ import org.apache.commons.io.FileUtils;
  */
 @WebServlet("/board/*")
 public class BoardController extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static String ARTICLE_IMAGE_REPO = "C:\\board\\article_image";
 	BoardService boardService;
 	ArticleVO articleVO;

@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Fri Jul 08 18:18:56 KST 2022
-org.eclipse.jst.jee.server\:web-study-12=C\:\\apache-tomcat-9\\wtpwebapps\\web-study-12
-org.eclipse.jst.jee.server\:pro17=C\:\\apache-tomcat-9\\wtpwebapps\\pro17
+#Fri Jul 15 17:13:21 KST 2022
+org.eclipse.jst.jee.server\:EventInfo=C\:\\apache-tomcat-9\\wtpwebapps\\EventInfo
+org.eclipse.jst.jee.server\:pro17p=C\:\\apache-tomcat-9\\wtpwebapps\\pro17p

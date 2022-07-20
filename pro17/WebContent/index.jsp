@@ -8,6 +8,7 @@
 <body>
 <%
 response.sendRedirect("http://localhost:8090/pro17/board/listArticles.do");
+//response.sendRedirect("http://localhost:8090/pro17/member/mem.do");
 %>
 </body>
 </html>
